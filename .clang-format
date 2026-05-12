@@ -1,0 +1,53 @@
+---
+Language: Cpp
+BasedOnStyle: LLVM
+
+# Indentation
+IndentWidth: 4
+ContinuationIndentWidth: 4
+TabWidth: 4
+UseTab: Never
+IndentCaseLabels: true
+
+# Line length
+ColumnLimit: 100
+
+# Braces — keep opening brace on same line everywhere
+BreakBeforeBraces: Attach
+AllowShortFunctionsOnASingleLine: Inline
+AllowShortLambdasOnASingleLine: All
+AllowShortBlocksOnASingleLine: Empty
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine: false
+
+# Alignment — mirrors the hand-aligned declarations and trailing comments
+AlignConsecutiveAssignments:
+  Enabled: true
+  AcrossEmptyLines: false
+  AcrossComments: false
+  AlignCompound: true
+AlignConsecutiveDeclarations:
+  Enabled: true
+  AcrossEmptyLines: false
+  AcrossComments: false
+AlignTrailingComments:
+  Kind: Always
+  OverEmptyLines: 1
+
+# Pointer/reference attached to type: `int* p`, `const T& v`
+PointerAlignment: Left
+ReferenceAlignment: Left
+
+# Preserve manually grouped #include blocks
+SortIncludes: Never
+
+# Spacing
+SpaceBeforeParens: ControlStatements
+SpaceAfterTemplateKeyword: false
+SpacesInAngles: Never
+
+# Namespaces
+NamespaceIndentation: None
+CompactNamespaces: false
+
+Standard: c++20

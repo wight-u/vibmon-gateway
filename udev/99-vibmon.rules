@@ -1,0 +1,2 @@
+# Kernel module char device — tag so systemd tracks dev-vibmon0.device
+SUBSYSTEM=="vibmon", KERNEL=="vibmon0", TAG+="systemd", MODE="0660", GROUP="vibmon"

@@ -70,3 +70,6 @@ Testing/
 
 # IDE
 .idea
+
+# CPM bootstrap — auto-downloaded on first configure
+cmake/CPM.cmake
